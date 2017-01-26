@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOSUIdropdownview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wax-BM-6Mp">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-2N-kVK">
+                                        <color key="backgroundColor" red="1" green="0.9100867359" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="35"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a drop down animal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsY-5G-1vV">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="290" id="nes-OX-m3a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vsY-5G-1vV" firstAttribute="leading" secondItem="e8M-2N-kVK" secondAttribute="trailing" constant="8" id="3Dg-d6-rOa"/>
+                                    <constraint firstItem="vsY-5G-1vV" firstAttribute="bottom" secondItem="e8M-2N-kVK" secondAttribute="bottom" id="4aD-Zj-CvJ"/>
+                                    <constraint firstItem="e8M-2N-kVK" firstAttribute="top" secondItem="Wax-BM-6Mp" secondAttribute="top" constant="8" id="Fxn-zq-D7K"/>
+                                    <constraint firstItem="vsY-5G-1vV" firstAttribute="trailing" secondItem="Wax-BM-6Mp" secondAttribute="trailingMargin" id="OmI-3P-Yye"/>
+                                    <constraint firstItem="vsY-5G-1vV" firstAttribute="top" secondItem="e8M-2N-kVK" secondAttribute="top" id="STw-i5-V6S"/>
+                                    <constraint firstItem="e8M-2N-kVK" firstAttribute="leading" secondItem="Wax-BM-6Mp" secondAttribute="leading" constant="8" id="WjT-R4-K09"/>
+                                    <constraint firstAttribute="bottom" secondItem="e8M-2N-kVK" secondAttribute="bottom" constant="579" id="ae1-3P-uTB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Wax-BM-6Mp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6mX-cv-B7W"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wax-BM-6Mp" secondAttribute="bottom" id="bWf-tS-o4a"/>
+                            <constraint firstAttribute="trailing" secondItem="Wax-BM-6Mp" secondAttribute="trailing" id="s0b-B1-YkS"/>
+                            <constraint firstItem="Wax-BM-6Mp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s0e-Up-YRD"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="R39-0K-YSR" appends="YES" id="BQY-lm-ova"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="Wax-BM-6Mp" id="18n-51-gVU"/>
+                        <outlet property="panGesture" destination="R39-0K-YSR" id="60D-Rn-xO0"/>
+                        <outlet property="topLayoutConstraintofMainView" destination="6mX-cv-B7W" id="FVY-ya-pyJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="R39-0K-YSR"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="47.226386806596707"/>
+        </scene>
+    </scenes>
+</document>
