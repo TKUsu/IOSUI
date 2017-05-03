@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,26 +25,22 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="sgc-Kn-HZJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="8ys-vM-g5d" style="IBUITableViewCellStyleDefault" id="sgc-Kn-HZJ">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sgc-Kn-HZJ" id="gJD-ig-fnz">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="sgc-Kn-HZJ" id="gJD-ig-fnz">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alE-Qq-zMm">
-                                                    <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8ys-vM-g5d">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="alE-Qq-zMm" secondAttribute="trailing" id="2Am-nP-rgs"/>
-                                                <constraint firstItem="alE-Qq-zMm" firstAttribute="leading" secondItem="gJD-ig-fnz" secondAttribute="leadingMargin" id="GSQ-sA-VI3"/>
-                                                <constraint firstItem="alE-Qq-zMm" firstAttribute="top" secondItem="gJD-ig-fnz" secondAttribute="topMargin" id="Gsi-pc-uyX"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="alE-Qq-zMm" secondAttribute="bottom" id="fDz-kK-bqd"/>
-                                            </constraints>
+                                            <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -53,10 +48,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Q6a-My-bGn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ro7-JP-upi"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q6a-My-bGn" secondAttribute="bottom" id="m5p-8K-i9o"/>
-                            <constraint firstItem="Q6a-My-bGn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pLq-ox-BR1"/>
-                            <constraint firstAttribute="trailing" secondItem="Q6a-My-bGn" secondAttribute="trailing" id="wxG-if-zMe"/>
+                            <constraint firstItem="Q6a-My-bGn" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="KDa-iS-2BW"/>
+                            <constraint firstItem="Q6a-My-bGn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Nfy-uP-Nmx"/>
+                            <constraint firstAttribute="trailing" secondItem="Q6a-My-bGn" secondAttribute="trailing" id="laa-F4-wx1"/>
+                            <constraint firstItem="Q6a-My-bGn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yF0-Wk-Wv3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -65,6 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>
