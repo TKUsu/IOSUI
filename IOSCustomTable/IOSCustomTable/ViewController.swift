@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var dialogue = [Messages]()
+    fileprivate var dialogue = [Messages]()
     var tableIndex: Int!
     var count = 1
     
@@ -84,9 +84,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
         count += 1
         cell.contentView.transform = CGAffineTransform (scaleX: 1,y: -1);
         if dialogue[tableIndex!].userName == "peter"{
-//            cell.contentView.transform = CGAffineTransform (scaleX: -1,y: -1);
             cell.textLabel?.textAlignment = .right
-            
         }
         
         return cell

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="View_Border" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EX4-X7-tsa">
+                                <rect key="frame" x="67" y="57" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Os7-cN-AeR">
+                                <rect key="frame" x="67" y="244" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is View Corner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5i-j4-ce3">
+                                        <rect key="frame" x="47" y="54" width="148" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="d5i-j4-ce3" firstAttribute="centerX" secondItem="Os7-cN-AeR" secondAttribute="centerX" id="Gft-Kh-A55"/>
+                                    <constraint firstItem="d5i-j4-ce3" firstAttribute="centerY" secondItem="Os7-cN-AeR" secondAttribute="centerY" id="H3N-FU-QFf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VR1-a9-QlD">
+                                <rect key="frame" x="67" y="469" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is View Shandow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxz-MQ-7HC">
+                                        <rect key="frame" x="37" y="54" width="166" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.72551379839999997" blue="0.33306202029999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wxz-MQ-7HC" firstAttribute="centerY" secondItem="VR1-a9-QlD" secondAttribute="centerY" id="GpZ-ZX-xi7"/>
+                                    <constraint firstItem="wxz-MQ-7HC" firstAttribute="centerX" secondItem="VR1-a9-QlD" secondAttribute="centerX" id="JYo-rp-HR8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is View Border" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCi-uJ-Pu2">
+                                <rect key="frame" x="114" y="111" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VR1-a9-QlD" firstAttribute="width" secondItem="Os7-cN-AeR" secondAttribute="width" id="9x1-Ym-Opo"/>
+                            <constraint firstItem="gCi-uJ-Pu2" firstAttribute="top" secondItem="EX4-X7-tsa" secondAttribute="bottom" constant="-74" id="B3S-hz-r03"/>
+                            <constraint firstItem="Os7-cN-AeR" firstAttribute="width" secondItem="EX4-X7-tsa" secondAttribute="width" id="Ero-My-Z6w"/>
+                            <constraint firstItem="VR1-a9-QlD" firstAttribute="top" secondItem="Os7-cN-AeR" secondAttribute="bottom" constant="97" id="GZl-VI-haG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EX4-X7-tsa" secondAttribute="trailing" constant="52" id="LY9-32-bvk"/>
+                            <constraint firstItem="EX4-X7-tsa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="MRy-hQ-SWx"/>
+                            <constraint firstItem="gCi-uJ-Pu2" firstAttribute="leading" secondItem="EX4-X7-tsa" secondAttribute="trailing" constant="-193" id="MmT-1K-M47"/>
+                            <constraint firstItem="VR1-a9-QlD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="V0X-fz-FRc"/>
+                            <constraint firstItem="Os7-cN-AeR" firstAttribute="height" secondItem="EX4-X7-tsa" secondAttribute="height" id="V1Q-8F-Tfd"/>
+                            <constraint firstItem="Os7-cN-AeR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="VuX-4I-kED"/>
+                            <constraint firstItem="Os7-cN-AeR" firstAttribute="top" secondItem="EX4-X7-tsa" secondAttribute="bottom" constant="59" id="XZ3-zd-8fB"/>
+                            <constraint firstItem="VR1-a9-QlD" firstAttribute="centerX" secondItem="Os7-cN-AeR" secondAttribute="centerX" id="Xq4-lp-vqs"/>
+                            <constraint firstItem="Os7-cN-AeR" firstAttribute="centerX" secondItem="EX4-X7-tsa" secondAttribute="centerX" id="ZtM-LI-5Fd"/>
+                            <constraint firstItem="gCi-uJ-Pu2" firstAttribute="centerX" secondItem="EX4-X7-tsa" secondAttribute="centerX" id="aFD-NF-6Nf"/>
+                            <constraint firstItem="EX4-X7-tsa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ane-FO-Hib"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VR1-a9-QlD" secondAttribute="bottom" constant="70" id="dzT-kk-1ow"/>
+                            <constraint firstItem="EX4-X7-tsa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="ezU-H7-c1n"/>
+                            <constraint firstItem="VR1-a9-QlD" firstAttribute="height" secondItem="Os7-cN-AeR" secondAttribute="height" id="r4P-zH-Hix"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ViewBorder" destination="EX4-X7-tsa" id="wQA-po-fKR"/>
+                        <outlet property="ViewCorner" destination="Os7-cN-AeR" id="9p5-az-ixf"/>
+                        <outlet property="ViewShandow" destination="VR1-a9-QlD" id="Yl2-Ir-4Br"/>
+                        <outlet property="test" destination="gCi-uJ-Pu2" id="MR2-db-L8z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
