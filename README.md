@@ -3,9 +3,11 @@ Tutorial IOS UI
 
 Application Size
 >``` swift
->//status bar hight
+>//Status Bar hight
 >UIApplication.shared.statusBarFrame.height
 >
->//view hight or weight
+>//View hight or weight
 >self.view.frame.width/hight
+>//View set x,y
+>tableView.frame.origin.x/y
 >```

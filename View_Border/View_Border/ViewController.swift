@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         //Right UI -> Corner
         ViewBorder.layer.borderWidth = 3
-        ViewBorder.layer.borderColor = UIColor.cya.cgColor
+        ViewBorder.layer.borderColor = UIColor.cyan.cgColor
         
         ViewCorner.layer.cornerRadius = 20
         ViewCorner.layer.borderWidth = 3
