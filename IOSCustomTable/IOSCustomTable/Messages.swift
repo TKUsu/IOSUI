@@ -8,16 +8,16 @@
 
 import Foundation
 
-class Messages {
-    var userName: String?
-    var messages: String?
-    var messagesTime: String?
+class Message {
+    var index: Int
+    var userName: String
+    var message: String
+    var messageTime: String
     
-    init() {  }
-    
-    init(userName: String, messages: String, messagesTime: String) {
+    init(index: Int, userName: String, message: String, messageTime: String) {
+        self.index = index
         self.userName = userName
-        self.messages = messages
-        self.messagesTime = messagesTime
+        self.message = message
+        self.messageTime = messageTime
     }
 }
